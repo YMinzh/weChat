@@ -21,13 +21,15 @@
             }
         }
         .right{
+            max-width: calc(100% - 76px);
+            overflow: hidden;
             height: 100%;
             flex-grow: 1;
             flex-shrink: 1;
             border-bottom: 1px solid $line-color;
             padding-right: 16px;
 
-            margin-bottom: 2px;
+            margin-bottom: 8px;
             @include flex(column,center);
             .up{
                 @include flex;
@@ -44,6 +46,10 @@
                 font-size: 0.7rem;
                 width: 100%;
                 color: $content-color;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                word-wrap: inherit;
+                white-space: nowrap;
             }
         }
     }

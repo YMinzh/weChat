@@ -71,12 +71,14 @@ a {
         .page .main .list .left img {
           width: 44px; }
       .page .main .list .right {
+        max-width: calc(100% - 76px);
+        overflow: hidden;
         height: 100%;
         flex-grow: 1;
         flex-shrink: 1;
         border-bottom: 1px solid #e0e0e0;
         padding-right: 16px;
-        margin-bottom: 2px;
+        margin-bottom: 8px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -96,7 +98,11 @@ a {
         .page .main .list .right .down {
           font-size: 0.7rem;
           width: 100%;
-          color: #9a9a9a; }
+          color: #9a9a9a;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          word-wrap: inherit;
+          white-space: nowrap; }
   .page .footOcc {
     flex-shrink: 0;
     height: 53px; }
