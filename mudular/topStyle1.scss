@@ -1,0 +1,26 @@
+.topOcc{
+    height: 71px;
+    flex-shrink: 0;
+}
+
+.top{
+    position: fixed;
+    background-color: $page-color;
+    left: 0;
+    top: 0;
+    padding-top: 27px;
+    height: 44px;
+    @include flex;
+    .left{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-left: 16px;
+    }
+    .right{
+        margin-right: 16px;
+        .iconfont{
+            font-size: 1.25rem;
+            margin-left: 35px;
+        }
+    }
+}

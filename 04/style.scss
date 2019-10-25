@@ -1,0 +1,58 @@
+@import '../mudular/color.scss';
+@import '../mudular/globalSetting.scss';
+@import '../mudular/function.scss';
+
+.page{
+    @include flex(column);
+    height: 100%;
+    .top{
+        flex-shrink: 0;
+        flex-grow: 0;
+        width: 100%;
+        background-color: #fff;
+        .up{
+            @include flex(row,flex-end);
+            margin-top: 40px;
+            .iconfont{
+                margin-right: 16px;
+            }
+        }
+        .mid{
+            padding-bottom: 40px;
+            margin-top: 35px;
+            @include flex;
+            .left{
+                flex-shrink: 0;
+                height: 62px;
+                width: 62px;
+                margin: 0 16px 0 25px;
+                overflow: hidden;
+                border-radius: 5px;
+                img{
+                    width: 62px;
+                }
+            }
+            .right{
+                width: 100%;
+                height: 62px;
+                flex-grow: 1;
+                @include flex(column);
+                .rUp{
+                    width: 100%;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                }
+                .rDown{
+                    @include flex;
+                    color: $content-color;
+                    font-size: 1rem;
+                    .qr .iconfont:last-of-type{
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
+    }
+    @import '../mudular/list2.scss';
+    @import '../mudular/footStyle.scss';
+}

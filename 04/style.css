@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  height: 100%; }
+  html body {
+    font-size: 62.5%;
+    height: 100%; }
+
+a {
+  text-decoration: none; }
+
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; }
+  .page .top {
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 100%;
+    background-color: #fff; }
+    .page .top .up {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 40px; }
+      .page .top .up .iconfont {
+        margin-right: 16px; }
+    .page .top .mid {
+      padding-bottom: 40px;
+      margin-top: 35px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      .page .top .mid .left {
+        flex-shrink: 0;
+        height: 62px;
+        width: 62px;
+        margin: 0 16px 0 25px;
+        overflow: hidden;
+        border-radius: 5px; }
+        .page .top .mid .left img {
+          width: 62px; }
+      .page .top .mid .right {
+        width: 100%;
+        height: 62px;
+        flex-grow: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; }
+        .page .top .mid .right .rUp {
+          width: 100%;
+          font-size: 1.6rem;
+          font-weight: bold; }
+        .page .top .mid .right .rDown {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          color: #9a9a9a;
+          font-size: 1rem; }
+          .page .top .mid .right .rDown .qr .iconfont:last-of-type {
+            margin-right: 16px; }
+  .page .main {
+    position: relative;
+    background-color: #ececec;
+    flex-grow: 1;
+    width: 100%;
+    overflow: auto; }
+    .page .main .block {
+      background-color: #fff; }
+      .page .main .block ul {
+        width: 100%; }
+        .page .main .block ul .list:last-of-type .right {
+          border: none; }
+        .page .main .block ul .list {
+          list-style: none;
+          height: 53px;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center; }
+          .page .main .block ul .list .left {
+            flex-shrink: 0;
+            margin: 0 16px;
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            overflow: hidden; }
+            .page .main .block ul .list .left img {
+              width: 40px;
+              height: 40px; }
+          .page .main .block ul .list .right {
+            height: 100%;
+            width: 100%;
+            font-size: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center; }
+            .page .main .block ul .list .right .iconfont {
+              margin-right: 16px; }
+    .page .main .division {
+      height: 10px;
+      background-color: #ececec;
+      width: 100%; }
+  .page .footOcc {
+    flex-shrink: 0;
+    height: 53px; }
+  .page .foot {
+    background-color: #f7f7f7;
+    height: 53px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .page .foot .a {
+      color: black;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      .page .foot .a .footicon {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; }
+        .page .foot .a .footicon .iconfont {
+          color: black;
+          font-size: 1.25rem;
+          text-decoration: none; }
+        .page .foot .a .footicon span {
+          color: black;
+          text-decoration: none;
+          font-size: 0.6rem; }
+      .page .foot .a .active {
+        color: #00d359; }
+        .page .foot .a .active .iconfont {
+          color: #00d359; }
+        .page .foot .a .active .span {
+          color: #00d359; }
+
+/*# sourceMappingURL=style.css.map */

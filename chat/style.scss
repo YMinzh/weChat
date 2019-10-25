@@ -1,0 +1,123 @@
+@import '../mudular/color.scss';
+@import '../mudular/function.scss';
+@import '../mudular/globalSetting.scss';
+
+.page{
+    @include flex(column);
+    height: 100%;
+    @import '../mudular/topStyle1.scss';
+
+    .main{
+        width: 100%;
+        flex-grow: 1;
+        overflow: auto;
+        background-color: $page-color;
+        .time{
+            @include flex(row,center);
+            font-size: 0.5rem;
+            color: $content-color;
+            margin: 16px 0;
+        }
+        ul{
+            & .list:last-of-type{
+                margin-bottom: 16px;
+            }
+            .list{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-top: 16px;
+                .both{
+                    height: 40px;
+                    width: 40px;
+                    margin: 0 8px;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                .leftNews{
+                    max-width: calc(100% - 144px);
+                    flex-grow: 1;
+                    position: relative;
+                    display: flex;
+                    justify-content: flex-start;
+                    .triangle{
+                        background-color: #fff;
+                        width: 11px;
+                        height: 11px;
+                        transform: rotate(45deg);
+                        position: absolute;
+                        left: -4px;
+                        top: 14px;
+                    }
+                    .text{
+                        max-width: 100%;
+                        word-wrap: break-word;
+                        align-items: center;
+                        display: inline-flex;
+                        min-height: 40px;
+                        background-color: #fff;
+                        font-size: 1rem;
+                        span{
+                            max-width: 100%;
+                            padding: 0 10px;
+                            word-break: break-all;
+                            word-wrap: break-word;
+                        }
+                    }
+                }    
+                .rightNews{
+                    max-width: calc(100% - 144px);
+                    flex-grow: 1;
+                    position: relative;
+                    display: flex;
+                    justify-content: flex-end;
+                    .triangle{
+                        background-color: #fff;
+                        width: 11px;
+                        height: 11px;
+                        transform: rotate(45deg);
+                        position: absolute;
+                        right: -4px;
+                        top: 14px;
+                    }
+                    .text{
+                        max-width: 100%;
+                        word-wrap: break-word;
+                        align-items: center;
+                        display: inline-flex;
+                        min-height: 40px;
+                        background-color: #fff;
+                        font-size: 1rem;
+                        span{
+                            max-width: 100%;
+                            padding: 0 10px;
+                            word-break: break-all;
+                            word-wrap: break-word;
+                        }
+                    }
+                }  
+            } 
+
+        }
+    }
+    .foot{
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: 53px;
+        background-color: $foot-color;
+        @include flex(row,space-around);
+        .text{
+            flex-grow: 1;
+            border: none;
+            padding: 0 10px;
+            height: 40px;
+        }
+        .iconfont{
+            font-size: 2rem;
+            margin: 0 10px;
+        }
+    }
+}

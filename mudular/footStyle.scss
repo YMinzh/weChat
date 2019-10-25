@@ -1,0 +1,39 @@
+.footOcc{
+    flex-shrink: 0;
+    height: 53px;
+}
+.foot{
+    background-color: $foot-color;
+    height: 53px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    @include flex(row,space-around);
+    .a{
+        color: black;
+        @include flex;
+        .footicon{
+            @include flex(column,space-around);
+            .iconfont{
+                color: black;
+                font-size: 1.25rem;
+                text-decoration: none;
+            }
+            span{
+                color: black;
+                text-decoration: none;
+                font-size: 0.6rem;
+            }
+            
+        }
+        .active{
+            color: $wechat-green;
+            .iconfont{
+                color: $wechat-green;
+            }
+            .span{
+                color: $wechat-green;
+            }
+        }
+    }
+}

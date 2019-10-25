@@ -1,0 +1,11 @@
+@import '../mudular/color.scss';
+@import '../mudular/function.scss';
+@import '../mudular/globalSetting.scss';
+
+.page{
+    height: 100%;
+    @include flex(column);
+    @import '../mudular/topStyle1.scss';
+    @import '../mudular/measureList.scss';
+    @import '../mudular/footStyle.scss';
+}

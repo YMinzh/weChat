@@ -1,0 +1,46 @@
+.topOcc{
+    height: 71px;
+    flex-shrink: 0;
+}
+.footOcc{
+    flex-shrink: 0;
+    height: 53px;
+}
+.top{
+    position: fixed;
+    background-color: $page-color;
+    left: 0;
+    top: 0;
+    padding-top: 27px;
+    height: 44px;
+    @include flex;
+    .left{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-left: 16px;
+    }
+    .right{
+        margin-right: 16px;
+        .iconfont{
+            font-size: 1.2rem;
+            margin-left: 35px;
+        }
+    }
+}
+.foot{
+    background-color: $foot-color;
+    height: 53px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    @include flex(row,space-around);
+    .footicon{
+        @include flex(column,space-around);
+        .iconfont{
+            font-size: 1.2rem;
+        }
+        span{
+            font-size: 0.6rem;
+        }
+    }
+}

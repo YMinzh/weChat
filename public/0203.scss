@@ -1,0 +1,96 @@
+@import'../public/public-color.scss';
+*{
+
+    padding: 0;
+    margin: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    font-size: 62.5%;
+}
+@mixin flex($direction:row,$justify:space-between){
+    width: 100%;
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}
+.page{
+    @include flex(column);
+    @import'../public/public.scss';
+    height: 100%;
+    .main{
+        position: relative;
+        background-color: $page-color;
+        flex-grow: 1;
+        width: 100%;
+        overflow: auto;
+        .block{
+            background-color: #fff;
+            ul{
+                width: 100%;
+                & .list:last-of-type .right{
+                    border: none;
+                }
+                .list{
+
+                    list-style: none;
+                    height: 53px;
+                    @include flex(row,flex-start);
+                    .left{
+                        flex-shrink: 0;
+                        margin: 0 16px;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        img{
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                    .right{
+                        height: 100%;
+                        width: 100%;
+                        font-size: 1rem;
+                        border-bottom: 1px solid $line-color;
+                        @include flex(row,flex-start);
+                    }
+                }
+            }
+        }
+        .division{
+            height: 30px;
+            background-color: $page-color;
+            @include flex(row,flex-start);
+            span{
+                color: $content-color;
+                margin-left: 16px;
+            }
+        }
+        
+        .num{
+            background-color: #fff;
+            height: 60px;
+            border-top: 1px solid $line-color;
+            @include flex(row, center);
+            color: $content-color;
+            font-size: 1.2rem;
+        }
+    }
+    .nav{
+        height: 100%;
+        position: fixed;
+        right: 16px;
+        top: 10px;
+        @include flex;
+        width: 10px;
+        .navBox{
+            @include flex(column,center);
+            align-items: flex-end;
+        }
+    }
+}

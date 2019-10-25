@@ -1,0 +1,31 @@
+@import '../mudular/color.scss';
+@import '../mudular/function.scss';
+@import '../mudular/globalSetting.scss';
+
+.page{
+    height: 100%;
+    @include flex(column);
+    @import '../mudular/topStyle1.scss';
+    @import '../mudular/list1.scss';
+    @import '../mudular/footStyle.scss';
+    .nav{
+        height: 100%;
+        position: fixed;
+        right: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .topOcc{
+            height: 71px;
+        }
+        .footOcc{
+            height: 53px;
+        }
+        .navBox{
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+        }
+    }
+}
